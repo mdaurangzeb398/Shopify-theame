@@ -1,0 +1,55 @@
+<!-- 🔖 First Code Section -->
+<div class="copy-box">
+  <p class="profile-name">KisswaarOfficial</p>
+  <p id="code1">KISS20</p>
+  <button onclick="copyToClipboard('code1')">Copy Code</button>
+</div>
+
+<!-- 🔖 Second Code Section -->
+<div class="copy-box">
+  <p class="profile-name">KisswaarOfficial</p>
+  <p id="code2">DEAL50</p>
+  <button onclick="copyToClipboard('code2')">Copy Code</button>
+</div>
+
+<!-- 🔖 Third Code Section -->
+<div class="copy-box">
+  <p class="profile-name">KisswaarOfficial</p>
+  <p id="code3">WELCOMEKSW</p>
+  <button onclick="copyToClipboard('code3')">Copy Code</button>
+</div>
+
+<!-- 💡 JS Function to Copy -->
+<script>
+  function copyToClipboard(id) {
+    var text = document.getElementById(id).textContent;
+    navigator.clipboard.writeText(text).then(function() {
+      alert('Copied: ' + text);
+    });
+  }
+</script>
+
+<!-- 🌈 Optional Styling -->
+<style>
+  .copy-box {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #fdfdfd;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif;
+  }
+  .profile-name {
+    font-weight: bold;
+    color: #444;
+  }
+  button {
+    margin-top: 0.4rem;
+    padding: 0.4rem 0.8rem;
+    background-color: #111;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+</style>
